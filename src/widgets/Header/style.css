@@ -1,0 +1,51 @@
+.header__container{
+    display: flex;
+    padding: 25px;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.header__logo{
+    margin-right: 50px;
+}
+
+.header__navigation{
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+
+.header__search{
+    max-width: 741px;
+    width: 100%;
+    margin-right: 40px;
+}
+
+.header__search-input{
+    color: #333;
+    font-family: Open Sans, Arial, Helvetica, Verdana, sans-serif;
+    background-image: url(https://gc.onliner.by/images/i-search.svg);
+    background-position: 12px 50%;
+    background-repeat: no-repeat;
+    background-size: 18px 18px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+    font-size: 14px;
+    height: 40px;
+    outline: 0;
+    padding: 0 10px 0 44px;
+    position: relative;
+    transition: border .1s linear;
+    width: 100%;
+    z-index: 1;
+}
+
+.header__search-input::placeholder{
+    color: #ccc;
+}
+
+.header__logo-link{
+    display: inline-block;
+}

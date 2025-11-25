@@ -1,0 +1,129 @@
+
+.header__btn{
+    border: 1px solid #ccc;
+    color: #ccc;
+    display: flex;
+    justify-content: center;
+    font-size: 17px;
+    height: 17px;
+    line-height: 1;
+    margin: 0 -1px 0 0;
+    padding: 11px 10px 10px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    -webkit-transition: border-color .1s linear, color .1s linear;
+    transition: border-color .1s linear, color .1s linear;
+    vertical-align: top;
+    width: 40px;
+    background-color: transparent;
+    min-height: 40px;
+    cursor: pointer;
+}
+
+.header__btn--entry{
+    color: #999;
+    font-family: Open Sans, Arial, Helvetica, Verdana, sans-serif;
+    font-size: 14px;
+    line-height: 1.214;
+    min-width: 128px;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: auto;
+}
+
+.header__btn:hover{
+    border-color: #999;
+    color: #333;
+    text-decoration: none;
+    z-index: 2;
+}
+
+.header__btns{
+    display: flex;
+    max-width: 240px;
+    width: 100%;
+}
+
+.header__btn--facebook:hover:after,
+.header__btn--vk:hover:after,
+.header__btn--google:hover:after{
+    opacity: 1;
+}
+
+.header__btn--basket:hover:before{
+    opacity: 1;
+}
+
+.header__btn--facebook:before,
+.header__btn--vk:before,
+.header__btn--google:before{
+    opacity: 1;
+}
+
+
+.header__btn--facebook:after{
+    background-image: url(https://gc.onliner.by/images/i-fb-blue.svg);
+    opacity: 0;
+}
+
+.header__btn--facebook:before{
+    background-image: url(https://gc.onliner.by/images/i-fb-gray-alter.svg);
+    opacity: 1;
+}
+
+.header__btn--vk:after{
+    background-image: url(https://gc.onliner.by/images/i-vk-blue.svg);
+    opacity: 0;
+}
+
+.header__btn--vk:before{
+    background-image: url(https://gc.onliner.by/images/i-vk-gray-alter.svg);
+    opacity: 1;
+}
+
+.header__btn--google:after{
+    background-image: url(https://gc.onliner.by/images/i-gg-red.svg);
+    opacity: 0;
+}
+
+.header__btn--google:before{
+    background-image: url(https://gc.onliner.by/images/i-gg-gray-alter.svg);
+    opacity: 1;
+}
+
+.header__btn--basket:before{
+    background-image: url(https://gc.onliner.by/images/i-cart-black-stroke.svg);
+    opacity: .5;
+}
+
+.header__btn--facebook:before, .header__btn--facebook:after,
+.header__btn--vk:before, .header__btn--vk:after,
+.header__btn--google:before, .header__btn--google:after,
+.header__btn--basket:before, .header__btn--basket:after{
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    bottom: 0;
+    content: "";
+    display: block;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-size: 7px 14px;
+    -webkit-transition: opacity .1s linear;
+    transition: opacity .1s linear;
+}
+
+.header__btn--google:before, .header__btn--google:after{
+    background-size: 12px 12px;
+
+}
+
+.header__btn--vk:before, .header__btn--vk:after{
+    background-size: 17px 9px;
+}
+
+.header__btn--basket:before{
+    background-size: 21px 19px;
+}
